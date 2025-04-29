@@ -6,6 +6,7 @@
 .filter{
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
   }
 
   .input-filter {
@@ -13,9 +14,9 @@
 	border: 1px solid #A3A3A3;
 }
 
-/* ინდუსტრია */
+	/* ინდუსტრია */
 	.filter-industry-container {
-		max-width: 420px;
+		max-width: 450px;
 	}
 
 	.industry-toggle {
@@ -65,3 +66,178 @@
 	.active .industry-content {
 		display: block;
 	}
+
+	/* რეგიონი */
+
+	.filter-region-container{
+		max-width: 450px;
+	}
+
+	.region-toggle{
+		background-color: rgba(245, 194, 53, 0.5);
+		border-radius: 8px;
+		padding: 10px 40px 10px 20px;
+		border: none;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		font-size: 18px;
+		position: relative;
+	}
+
+	.region-toggle::after {
+		content: "›";
+		position: absolute;
+		right: 15px;
+		font-size: 20px;
+		color: black;
+		transform: rotate(90deg);
+		transition: transform 0.3s ease;
+	}
+
+	.region.active .region-toggle::after {
+		transform: rotate(-90deg); 
+	}
+
+	.region-content {
+		display: none;
+		background-color: white;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		max-height: 450px;
+		overflow-y: auto;
+		padding: 10px;
+	}
+
+	.region-content label {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
+		margin-bottom: 10px;
+	}
+
+	.active .region-content {
+		display: block;
+	}
+
+	/* ბიზნეს მოდელი */
+
+	.filter-business-container{
+		max-width: 450px;
+	}
+
+	.business-toggle{
+		background-color: rgba(245, 194, 53, 0.5);
+		border-radius: 8px;
+		padding: 10px 40px 10px 20px;
+		border: none;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		font-size: 18px;
+		position: relative;
+	}
+
+	.business-toggle::after {
+		content: "›";
+		position: absolute;
+		right: 15px;
+		font-size: 20px;
+		color: black;
+		transform: rotate(90deg);
+		transition: transform 0.3s ease;
+	}
+
+	.business.active .business-toggle::after {
+		transform: rotate(-90deg); 
+	}
+
+	.business-content {
+		display: none;
+		background-color: white;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		max-height: 450px;
+		overflow-y: auto;
+		padding: 10px;
+	}
+
+	.business-content label {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
+		margin-bottom: 10px;
+	}
+
+	.active .business-content {
+		display: block;
+	}
+
+	/* კატეგორიები */
+
+	.filter-box {
+		max-width: 450px;
+	  }
+	  
+	  .filter-title {
+		background-color: rgba(245, 194, 53, 0.5);
+		border-radius: 8px;
+		padding: 10px 40px 10px 20px;
+		border: none;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		font-size: 18px;
+		position: relative;
+	  }
+	  
+	  .filter-title::after {
+		content: "›";
+		position: absolute;
+		right: 15px;
+		font-size: 20px;
+		color: black;
+		transform: rotate(90deg); 
+		transition: transform 0.3s ease;
+	  }
+	  
+	  .filter-box.active .filter-title::after {
+		transform: rotate(-90deg);
+	  }
+	  
+	  .category {
+		display: none;
+		background-color: white;
+		border-radius: 8px;
+		border: 1px solid #ddd;
+		max-height: 450px;
+		overflow-y: auto;
+		padding: 10px;
+	  }
+	  
+	  .filter-box.active .category {
+		display: block;
+	  }
+	  
+	  .main-category {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		gap: 15px;
+		font-size: 18px;
+		font-weight: 500;
+	  }
+	  
+	  .subcategory-group {
+		margin-left: 30px;
+	  }
+	  
+	  .subcategory {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
+		margin-bottom: 10px;
+	  }
