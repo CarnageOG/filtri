@@ -3,10 +3,15 @@
 	padding: 0;
 }
 
-.filtri{
+.filter{
 	display: flex;
 	flex-direction: row;
   }
+
+  .input-filter {
+	border-radius: 1px;
+	border: 1px solid #A3A3A3;
+}
 
 /* ინდუსტრია */
 	.filter-industry-container {
@@ -55,11 +60,6 @@
 		gap: 10px;
 		cursor: pointer;
 		margin-bottom: 10px;
-	}
-
-	.input-industry {
-		border-radius: 1px;
-		border: 1px solid #A3A3A3;
 	}
 
 	.active .industry-content {
