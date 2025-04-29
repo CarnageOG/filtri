@@ -22,6 +22,14 @@ businessToggleBtn.addEventListener("click", () => {
   businessDropdown.classList.toggle("active");
 });
 
+// Financing Dropdown Toggle
+const financingDropdown = document.getElementById("financingDropdown");
+const financingToggleBtn = financingDropdown.querySelector(".financing-toggle");
+
+financingToggleBtn.addEventListener("click", () => {
+  financingDropdown.classList.toggle("active");
+});
+
 // კატეგორია
 
 // აკავშირებს მთავარ კატეგორიებს ქვეკატეგორიებთან
