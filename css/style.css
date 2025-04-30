@@ -293,3 +293,42 @@
 		cursor: pointer;
 		margin-bottom: 10px;
 	}
+
+	/* დაარსების თარითი */
+
+	.filter-data-container{
+		max-width: 450px;
+	}
+
+	.data-toggle{
+		background-color: rgba(245, 194, 53, 0.5);
+		border-radius: 8px;
+		padding: 10px 40px 10px 20px;
+		border: none;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		font-size: 18px;
+		position: relative;
+	}
+
+	.data-toggle::after {
+		content: "›";
+		position: absolute;
+		right: 15px;
+		font-size: 20px;
+		color: black;
+		transform: rotate(90deg);
+		transition: transform 0.3s ease;
+	}
+
+	.data.active .data-toggle::after {
+		transform: rotate(-90deg); 
+	}
+
+
+
+
+
+
+
