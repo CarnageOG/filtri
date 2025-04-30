@@ -296,11 +296,15 @@
 
 	/* დაარსების თარითი */
 
-	.filter-data-container{
+	.filter-data-container {
 		max-width: 450px;
-	}
-
-	.data-toggle{
+	  }
+  
+	  .data {
+		position: relative;
+	  }
+  
+	  .data-toggle {
 		background-color: rgba(245, 194, 53, 0.5);
 		border-radius: 8px;
 		padding: 10px 40px 10px 20px;
@@ -310,9 +314,9 @@
 		cursor: pointer;
 		font-size: 18px;
 		position: relative;
-	}
-
-	.data-toggle::after {
+	  }
+  
+	  .data-toggle::after {
 		content: "›";
 		position: absolute;
 		right: 15px;
@@ -320,15 +324,46 @@
 		color: black;
 		transform: rotate(90deg);
 		transition: transform 0.3s ease;
-	}
-
-	.data.active .data-toggle::after {
-		transform: rotate(-90deg); 
-	}
-
-
-
-
-
-
-
+	  }
+  
+	  .data.active .data-toggle::after {
+		transform: rotate(-90deg);
+	  }
+  
+	  .dropdown-content {
+		display: none;
+		max-width: 450px;
+		border-radius: 8px;
+		padding: 10px;
+		/* z-index: 1000; */
+	  }
+  
+	  .data.active .dropdown-content {
+		display: block;
+	  }
+  
+	  .year-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+	  }
+  
+	  .year-button {
+		background-color: white;
+		border: 1px solid #07102B;
+		padding: 10px;
+		border-radius: 20px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	  }
+  
+	  .year-button:hover {
+		background-color: #FC48A8;
+		color: #FFFFFF;
+	  }
+  
+	  .year-button.selected {
+		background-color: #FC48A8;
+		color: #FFFFFF;
+	  }
