@@ -1,4 +1,4 @@
-// Industry Dropdown Toggle
+// ინდუსტიტია
 const industryDropdown = document.getElementById("industryDropdown");
 const industryToggleBtn = industryDropdown.querySelector(".industry-toggle");
 
@@ -6,7 +6,7 @@ industryToggleBtn.addEventListener("click", () => {
   industryDropdown.classList.toggle("active");
 });
 
-// Region Dropdown Toggle
+// რეგიონი
 const regionDropdown = document.getElementById("regionDropdown");
 const regionToggleBtn = regionDropdown.querySelector(".region-toggle");
 
@@ -14,7 +14,7 @@ regionToggleBtn.addEventListener("click", () => {
   regionDropdown.classList.toggle("active");
 });
 
-// Business model Dropdown Toggle
+// ბიზნეს მოდელი
 const businessDropdown = document.getElementById("businessDropdown");
 const businessToggleBtn = businessDropdown.querySelector(".business-toggle");
 
@@ -22,7 +22,7 @@ businessToggleBtn.addEventListener("click", () => {
   businessDropdown.classList.toggle("active");
 });
 
-// Financing Dropdown Toggle
+// დაფინანსების წყარო
 const financingDropdown = document.getElementById("financingDropdown");
 const financingToggleBtn = financingDropdown.querySelector(".financing-toggle");
 
@@ -32,7 +32,6 @@ financingToggleBtn.addEventListener("click", () => {
 
 // კატეგორია
 
-// აკავშირებს მთავარ კატეგორიებს ქვეკატეგორიებთან
 document.querySelectorAll('.main-category-checkbox').forEach(category => {
   category.addEventListener('change', function () {
     const targetId = this.dataset.target;
@@ -42,7 +41,6 @@ document.querySelectorAll('.main-category-checkbox').forEach(category => {
   });
 });
 
-// ღილაკის დაკლიკებით ცვლის active კლასს
 function toggleContent() {
   const container = document.getElementById('filterBox');
   container.classList.toggle('active');
@@ -56,12 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearGrid = document.querySelector('.year-grid');
   const selectedYears = new Set();
 
-  // Dropdown toggle
   toggleButton.addEventListener('click', function () {
     parentData.classList.toggle('active');
   });
 
-  // წლების გენერაცია და მონიშვნის ლოგიკა
   for (let year = 1998; year <= 2025; year++) {
     const btn = document.createElement('button');
     btn.textContent = year;
@@ -85,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// წლების სერჩი
+// დაარსების თარიღი სერჩი
 
 document.addEventListener("DOMContentLoaded", function () {
   const dataSearch = document.getElementById("datasearchDropdown");
@@ -93,19 +89,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const dropdownContent = dataSearch.querySelector(".dropdown-content");
   const yearInput = document.getElementById("yearInput");
 
-  // Dropdown toggle
   toggleButton.addEventListener("click", function () {
     dataSearch.classList.toggle("active");
   });
 
-  // Close on 
   document.addEventListener("click", function (e) {
     if (!dataSearch.contains(e.target)) {
       dataSearch.classList.remove("active");
     }
   });
 
-  // connect 
   yearInput.addEventListener("input", function () {
     const year = yearInput.value.trim();
     console.log("შეყვანილი წელი:", year);
