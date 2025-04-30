@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.classList.add('year-button');
 
     btn.addEventListener('click', (e) => {
-      e.stopPropagation(); // dropdown არ დაიხუროს შემთხვევით
+      e.stopPropagation(); 
 
       btn.classList.toggle('selected');
 
