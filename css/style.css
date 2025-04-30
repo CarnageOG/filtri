@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+	body{
+		padding: 40px;
+		background-color: #FFF9F2;
+	}
 
 	.industry-toggle:hover,
 	.region-toggle:hover,
