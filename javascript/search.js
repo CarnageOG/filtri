@@ -11,6 +11,7 @@ function resetFilters() {
     btn.classList.remove('selected');
   });
 }
+
 // ინდუსტიტია
 const industryDropdown = document.getElementById("industryDropdown");
 const industryToggleBtn = industryDropdown.querySelector(".industry-toggle");
@@ -44,20 +45,24 @@ financingToggleBtn.addEventListener("click", () => {
 });
 
 // კატეგორია
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.main-category-checkbox').forEach(category => {
+    category.addEventListener('change', function () {
+      const targetId = this.dataset.target;
+      const group = document.getElementById(targetId);
+      if (group) {
+        const checkboxes = group.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(cb => cb.checked = this.checked);
+      }
+    });
+  });
 
-document.querySelectorAll('.main-category-checkbox').forEach(category => {
-  category.addEventListener('change', function () {
-    const targetId = this.dataset.target;
-    const group = document.getElementById(targetId);
-    const checkboxes = group.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(cb => cb.checked = this.checked);
+  const filterTitle = document.querySelector('.filter-title');
+  filterTitle.addEventListener('click', function () {
+    const container = document.getElementById('filterBox');
+    container.classList.toggle('active');
   });
 });
-
-function toggleContent() {
-  const container = document.getElementById('filterBox');
-  container.classList.toggle('active');
-}
 
 // დაარსების თარიღი
 

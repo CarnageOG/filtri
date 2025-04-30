@@ -13,9 +13,9 @@
 <body>
 	<section class="buttons">
 		<button class="reset-button" onclick="resetFilters()"><img src="images/refresh.png" alt=""> ფილტრის გასუფთავება</button>
-		<div id="filterBox">
-			<button class="search-button" id="globalSearchBtn">ძიება</button>
-		</div>
+		<!-- <div id="filterBox">
+			<button class="search-button" id="searchButton">ძიება</button>
+		</div> -->
 	</section>
 	<section class="filter">
 		<div class="filter-region-container">
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 		<div class="filter-box" id="filterBox">
-			<div class="filter-title" onclick="toggleContent()">კატეგორია</div>
+			<div class="filter-title">კატეგორია</div>
 			<div class="category" id="filterContent">
 				<label class="main-category">
 					<input type="checkbox" class="main-category-checkbox" data-target="tech">
@@ -110,11 +110,11 @@
 					<label class="subcategory"><input type="checkbox">ბრენდინგი</label>
 				</div>
 				<label class="main-category">
-					<input type="checkbox" class="main-category-checkbox" data-target="Entertainment">
+					<input type="checkbox" class="main-category-checkbox" data-target="entertainment">
 					<img src="images/phone.png" class="icon" alt="">
 					მედია და გართობა
 				</label>
-				<div class="subcategory-group" id="Entertainment">
+				<div class="subcategory-group" id="entertainment">
 					<label class="subcategory"><input type="checkbox">ციიფრული მედია</label>
 					<label class="subcategory"><input type="checkbox">თამაში</label>
 					<label class="subcategory"><input type="checkbox">მუსიკა</label>
@@ -123,11 +123,11 @@
 					<label class="subcategory"><input type="checkbox">ვირტუალური რეალობა</label>
 				</div>
 				<label class="main-category">
-					<input type="checkbox" class="main-category-checkbox" data-target="Healthcare">
+					<input type="checkbox" class="main-category-checkbox" data-target="healthcare">
 					<img src="images/hospital.png" class="icon" alt="">
 					ჯანდაცვის და სიცოცხლის მეცნიერებები
 				</label>
-				<div class="subcategory-group" id="Healthcare">
+				<div class="subcategory-group" id="healthcare">
 					<label class="subcategory"><input type="checkbox">ჯანმრთელობის დაცვა</label>
 					<label class="subcategory"><input type="checkbox">ბიოტექნოლოგია</label>
 					<label class="subcategory"><input type="checkbox">სამედიცინო მოწყობილობები</label>
@@ -136,11 +136,11 @@
 					<label class="subcategory"><input type="checkbox">ფარმაცევტული</label>
 				</div>
 				<label class="main-category">
-					<input type="checkbox" class="main-category-checkbox" data-target="Finance">
+					<input type="checkbox" class="main-category-checkbox" data-target="finance">
 					<img src="images/money.png" class="icon" alt="">
 					ფინანსები და ბიზნეს სერვისები
 				</label>
-				<div class="subcategory-group" id="Finance">
+				<div class="subcategory-group" id="finance">
 					<label class="subcategory"><input type="checkbox">ფინანსური ტექნოლოგია</label>
 					<label class="subcategory"><input type="checkbox">სადაზღვევო ტექნოლოგია</label>
 					<label class="subcategory"><input type="checkbox">გადახდები</label>
@@ -149,11 +149,11 @@
 					<label class="subcategory"><input type="checkbox">ბუღალტერია</label>
 				</div>
 				<label class="main-category">
-					<input type="checkbox" class="main-category-checkbox" data-target="Social">
+					<input type="checkbox" class="main-category-checkbox" data-target="social">
 					<img src="images/earth.png" class="icon" alt="">
 					სოციალური გავლენა და მდგრადობა
 				</label>
-				<div class="subcategory-group" id="Social">
+				<div class="subcategory-group" id="social">
 					<label class="subcategory"><input type="checkbox">სუფთა ენერგია</label>
 					<label class="subcategory"><input type="checkbox">განახლებადი ენერგია</label>
 					<label class="subcategory"><input type="checkbox">გარემოს ტექნოლოგია</label>
@@ -162,11 +162,11 @@
 					<label class="subcategory"><input type="checkbox">სამთავრობო ტექნოლოგია</label>
 				</div>
 				<label class="main-category">
-					<input type="checkbox" class="main-category-checkbox" data-target="Real-estate">
+					<input type="checkbox" class="main-category-checkbox" data-target="real-estate">
 					<img src="images/home.png" class="icon" alt="">
 					უძრავი აქტივობები და ფიზიკური სამყარო
 				</label>
-				<div class="subcategory-group" id="Real-estate">
+				<div class="subcategory-group" id="real-estate">
 					<label class="subcategory"><input type="checkbox">უძრავი ქონება</label>
 					<label class="subcategory"><input type="checkbox">კონსტრუქცია</label>
 					<label class="subcategory"><input type="checkbox">ტრანსპორტირება</label>
@@ -179,7 +179,7 @@
 					<img src="images/rocket.png" class="icon" alt="">
 					ტექნიკური და პროგრამული უზრუნველყოფა
 				</label>
-				<div class="subcategory-group" id="software">
+				<div class="subcategory-group"id="software">
 					<label class="subcategory"><input type="checkbox">ვებ3</label>
 					<label class="subcategory"><input type="checkbox">ბლოკჩეინი</label>
 					<label class="subcategory"><input type="checkbox">კოსმოსური ტექნოლოგია</label>
