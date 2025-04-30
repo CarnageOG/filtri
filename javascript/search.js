@@ -1,3 +1,16 @@
+// ფილტრის გასუფთვება
+function resetFilters() {
+  // ჩეკბოქსები
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+
+  // ტექსტური ველები
+  document.querySelectorAll('input[type="text"]').forEach(input => input.value = "");
+
+  // წლების ღილაკებიდან კლასის მოცილება
+  document.querySelectorAll('.year-button.selected').forEach(btn => {
+    btn.classList.remove('selected');
+  });
+}
 // ინდუსტიტია
 const industryDropdown = document.getElementById("industryDropdown");
 const industryToggleBtn = industryDropdown.querySelector(".industry-toggle");
