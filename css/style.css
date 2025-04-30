@@ -24,12 +24,23 @@
 		border-radius: 1px;
 		border: 1px solid #A3A3A3;
 	}
-	
+
 	/* ღილაკები */
 
 	.buttons{
 		display: flex;
+		justify-content: space-between;
+	}
+
+	.div-search{
+
+	}
+
+	.div-buttons{
+		display: flex;
 		flex-direction: row;
+		gap: 30px;
+		margin-bottom: 50px;
 	}
 
 	.reset-button{
