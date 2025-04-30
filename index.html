@@ -12,26 +12,6 @@
 </head>
 <body>
 	<section class="filter">
-		<div class="filter-industry-container">
-			<div class="industry" id="industryDropdown">
-				<button class="industry-toggle">ინდუსტრია</button>
-				<div class="industry-content">
-					<label><input class="input-filter" type="checkbox"> <img src="images/laptop.png" alt=""> ტექნოლოგიები</label>
-					<label><input class="input-filter" type="checkbox"> <img src="images/bank.png" alt=""> ფინანსები</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/dna.png" alt=""> ჯანდაცვა</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/home.png" alt=""> უძრავი ქონება</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/trolley.png" alt=""> საცალო ვაჭრობა</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/truck.png" alt=""> ტრანსპორტი და მობილურობა</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/sprout.png" alt=""> სოფლის მეურნეობა</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/books.png" alt=""> განათლება</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/gamepad.png" alt=""> გართობა და მედია</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/enterprise.png" alt=""> სავაჭრო და B2B</label>
-					<label><input class="input-filter"  type="checkbox"> <img src="images/baggage.png" alt=""> მორგებული და მასშტაბირებადი</label>
-					<label><input class="input-filter" type="checkbox"> <img src="images/tractor.png" alt=""> სოციალური მეწარმეობა</label>
-					<label><input class="input-filter"  type="checkbox"> სხვა</label>
-			  	</div>
-			</div>
-		</div>
 		<div class="filter-region-container">
 			<div class="region" id="regionDropdown">
 				<button class="region-toggle">რეგიონი</button>
@@ -65,20 +45,33 @@
 			  	</div>
 			</div>
 		</div>
-		<div class="filter-financing-container">
-			<div class="financing" id="financingDropdown">
-				<button class="financing-toggle">დაფინანსების წყარო</button>
-				<div class="financing-content">
-					<label><input class="input-filter" type="checkbox">პირადი რესურსები</label>
-					<label><input class="input-filter" type="checkbox">ანგელოზური ინვესტიციები</label>
-					<label><input class="input-filter" type="checkbox">ვენჩერული კაპიტალი</label>
-					<label><input class="input-filter" type="checkbox">სახელმწიფო გრანტები და სუბსიდიები</label>
-					<label><input class="input-filter" type="checkbox">საერთაშორისო გრანტები</label>
-					<label><input class="input-filter" type="checkbox">ბანკები და მიკროსაფინანსო ორგანიზაციები</label>
-					<label><input class="input-filter" type="checkbox">ბიზნეს აქსელერატორები და ინკუბატორები</label>
-					<label><input class="input-filter" type="checkbox">სახალხო დაფინანსება</label>
-					<label><input class="input-filter" type="checkbox">კორპორაციული ინვესტიციები და სტრატეგიული პარტნიორები</label>
-					<label><input class="input-filter" type="checkbox"> სხვა</label>
+		<div class="filter-data-search-container">
+			<div class="data-search" id="datasearchDropdown">
+				<button class="data-search-toggle">დაარსების თარიღი</button>
+				<div class="dropdown-content">
+					<div class="data-content">
+						<input type="text" id="yearInput" placeholder="წელი" />
+					</div>
+			  	</div>
+			</div>
+		</div>
+		<div class="filter-industry-container">
+			<div class="industry" id="industryDropdown">
+				<button class="industry-toggle">ინდუსტრია</button>
+				<div class="industry-content">
+					<label><input class="input-filter" type="checkbox"> <img src="images/laptop.png" alt=""> ტექნოლოგიები</label>
+					<label><input class="input-filter" type="checkbox"> <img src="images/bank.png" alt=""> ფინანსები</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/dna.png" alt=""> ჯანდაცვა</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/home.png" alt=""> უძრავი ქონება</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/trolley.png" alt=""> საცალო ვაჭრობა</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/truck.png" alt=""> ტრანსპორტი და მობილურობა</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/sprout.png" alt=""> სოფლის მეურნეობა</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/books.png" alt=""> განათლება</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/gamepad.png" alt=""> გართობა და მედია</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/enterprise.png" alt=""> სავაჭრო და B2B</label>
+					<label><input class="input-filter"  type="checkbox"> <img src="images/baggage.png" alt=""> მორგებული და მასშტაბირებადი</label>
+					<label><input class="input-filter" type="checkbox"> <img src="images/tractor.png" alt=""> სოციალური მეწარმეობა</label>
+					<label><input class="input-filter"  type="checkbox"> სხვა</label>
 			  	</div>
 			</div>
 		</div>
@@ -202,14 +195,21 @@
 			  </div>
 			</div>
 		</div>
-		<div class="filter-data-search-container">
-			<div class="data-search" id="datasearchDropdown">
-			  <button class="data-search-toggle">დაარსების თარიღი</button>
-			  <div class="dropdown-content">
-				<div class="data-content">
-					<input type="text" id="yearInput" placeholder="წელი" />
-				</div>
-			  </div>
+		<div class="filter-financing-container">
+			<div class="financing" id="financingDropdown">
+				<button class="financing-toggle">დაფინანსების წყარო</button>
+				<div class="financing-content">
+					<label><input class="input-filter" type="checkbox">პირადი რესურსები</label>
+					<label><input class="input-filter" type="checkbox">ანგელოზური ინვესტიციები</label>
+					<label><input class="input-filter" type="checkbox">ვენჩერული კაპიტალი</label>
+					<label><input class="input-filter" type="checkbox">სახელმწიფო გრანტები და სუბსიდიები</label>
+					<label><input class="input-filter" type="checkbox">საერთაშორისო გრანტები</label>
+					<label><input class="input-filter" type="checkbox">ბანკები და მიკროსაფინანსო ორგანიზაციები</label>
+					<label><input class="input-filter" type="checkbox">ბიზნეს აქსელერატორები და ინკუბატორები</label>
+					<label><input class="input-filter" type="checkbox">სახალხო დაფინანსება</label>
+					<label><input class="input-filter" type="checkbox">კორპორაციული ინვესტიციები და სტრატეგიული პარტნიორები</label>
+					<label><input class="input-filter" type="checkbox"> სხვა</label>
+			  	</div>
 			</div>
 		</div>
 	</section>
