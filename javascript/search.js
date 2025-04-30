@@ -84,3 +84,30 @@ document.addEventListener("DOMContentLoaded", () => {
     yearGrid.appendChild(btn);
   }
 });
+
+// წლების სერჩი
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dataSearch = document.getElementById("datasearchDropdown");
+  const toggleButton = dataSearch.querySelector(".data-search-toggle");
+  const dropdownContent = dataSearch.querySelector(".dropdown-content");
+  const yearInput = document.getElementById("yearInput");
+
+  // Dropdown toggle
+  toggleButton.addEventListener("click", function () {
+    dataSearch.classList.toggle("active");
+  });
+
+  // Close on 
+  document.addEventListener("click", function (e) {
+    if (!dataSearch.contains(e.target)) {
+      dataSearch.classList.remove("active");
+    }
+  });
+
+  // connect 
+  yearInput.addEventListener("input", function () {
+    const year = yearInput.value.trim();
+    console.log("შეყვანილი წელი:", year);
+  });
+});
